@@ -1,0 +1,284 @@
+*{
+	padding: 0;
+	margin: 0
+}
+ul{
+	list-style-type: none;
+}
+.clearfix::after{
+	content: "";
+    display: block;
+    clear: both;
+}
+
+::-webkit-scrollbar{
+			display: none;
+		}
+
+
+.screen-view{
+	position: relative;
+	width:100%;
+	height: 100vh;
+	background-color: #FFF9AA;
+}
+.screen-view .main{
+	position: absolute;
+	width: 80%;
+	height: 450px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 10px;
+    border: 1px solid  #FFF9AA;
+    overflow: hidden;
+}
+.screen-view .main .left{
+	position: relative;
+	width: 45%;
+	height: 100%;
+	background-color:#5048B9;
+	/*outline: 1px solid blue;*/
+}
+
+.screen-view .main .left, .right{
+	float: left;
+}
+.left .icons{
+	position: relative;
+	width: 85%;
+	height: 20px;
+	/*outline: 1px solid black;*/
+	margin: 10px 30px;
+}
+.left .icons .icon{
+	/*outline: 1px solid white;*/
+	width: 20px;
+	height: 20px;
+	float: left;
+
+}
+.left .icons .menu{
+	position: absolute;
+	left: 0;
+	background: url("../icon/menu.png") no-repeat center;
+	background-size:10px;
+}
+.left .icons .battery{
+	position: absolute;
+	right: 55px;
+	background: url("../icon/video-camera.png") no-repeat center;
+	background-size:10px;
+}
+
+.left .icons .arrow{
+	position: absolute;
+	right: 25px;
+	background: url("../icon/up-arrow.png") no-repeat center;
+	background-size:10px;
+}
+
+.left .icons .more{
+	position: absolute;
+	right: 0;
+	background: url("../icon/more.png") no-repeat center;
+	background-size:3px;
+}
+.left .contact{
+	position: relative;
+	height: 80%;
+	width: 100%;
+	margin-top: 30px;
+	overflow: auto;
+
+	/*outline: 1px solid white;*/
+
+}
+
+.left .contact .list{
+	position: relative;
+	width: 75%;
+	height: 60px;
+	margin-left: 40px;
+	margin-top: 16px;
+	/*outline: 1px solid white;*/
+}
+.contact .list .avatar{
+	/*border:1px solid white;*/
+	border-radius: 100%;
+	width: 55px;
+	height: 55px;
+	background: url("../images/a8.jpg") no-repeat center;
+	background-size: cover;
+}
+.contact .list .name{
+	/*outline: 1px solid white;*/
+	width:76%;
+	height: 100%;
+	margin-left: 8px;
+	padding-top: 15px;
+}
+.contact .list .avatar, .name{
+	float: left;
+}
+.list .name h4{
+	font-family: sans-serif;
+	color: #fff;
+	font-weight: 100;
+	font-size: 10px;
+	text-transform: capitalize;
+}
+.list .name .msg, .time{
+	font-family: sans-serif;
+	color: #fff;
+	font-size: 10px;
+	text-transform: capitalize;
+	opacity: 0.4;
+}
+.list .name .time{
+	position: absolute;
+	top: 15px;
+	right: 0;
+}
+.list .notification{
+	position: absolute;
+	left: 41px;
+	width: 15px;
+	height: 15px;
+	border-radius: 100%;
+	background-color: mediumvioletred;
+}
+.notification .counter{
+	position: relative;
+	font-size: 10px;
+	color: white;
+	text-align: center:;
+}
+.screen-view .main .right{
+	position: relative;
+	width: 55%;
+	height: 100%;
+	background-color: white;
+	/*outline:1px solid red;*/
+}
+.main .right .right-head{
+	position: relative;
+	width: 95%;
+	height: 50px;
+	/*outline: 1px solid black;*/
+	margin: 5px 10px;
+}
+.right .right-head .usernames{
+	position: relative;
+	width: 45%;
+	/*outline: 1px solid blue;*/
+	float: left;
+	font-size: 10px;
+	padding-top: 15px;
+	padding-left: 15px;
+	color: grey;
+}
+.right .right-head .avat{
+	position: relative;
+	width: 100px;
+	height: 50px;
+	/*outline: 1px solid blue;*/
+	float:left;
+	margin-left:19%; 
+}
+.avat .avatm, .avatmm{
+	position: absolute;
+	top: 5px;
+	height: 35px;
+	width: 35px;
+	/*border: 1px solid blue;*/
+	border-radius:100%;
+}
+.avat .avatm{
+	left: 17px;
+	background: url("../images/a8.jpg") no-repeat center;
+	background-size: cover
+}
+.avat .avatmm{
+	right: 15px;
+	background: url("../images/a8.jpg") no-repeat center;
+	background-size: cover
+}
+.right .chat{
+	position: relative;
+	height: 70%;
+	width: 90%;
+	/*outline: 1px solid blue;*/
+	margin: 0px 20px;
+	overflow: auto;
+}
+
+.right .chat .my-message{
+	position: relative;
+	width: 95%;
+	height: 20%;
+	/*outline: 1px solid blue;*/
+	margin: 10px;
+}
+.right .chat .m-message{
+	position: relative;
+	width: 95%;
+	height: 20%;
+	/*outline: 1px solid blue;*/
+	margin: 10px;
+}
+
+.chat .my-message .avatarl{
+	position: relative;
+	height: 35px;
+	width: 35px;
+	/*border: 1px solid blue*/;
+	border-radius:100%;
+	background: url("../images/a8.jpg") no-repeat center;
+	background-size: cover;
+	float: left;
+	margin: 10px;
+
+}
+.chat .my-message .message{
+	position: relative;
+	width: 120px;
+	background-color: #FF97BD;
+	border-radius: 5px;
+	padding: 10px;
+	color: white;
+	font-family: verdana geneva sans-serif;
+	font-size: 11px;
+	text-align: center;
+	letter-spacing: 1px;
+	float: left;
+	margin-top: 10px;
+}
+.chat .m-message .avatarr{
+	position: relative;
+	height: 35px;
+	width: 35px;
+	/*border: 1px solid blue;*/
+	border-radius:100%;
+	background: url("../images/a8.jpg") no-repeat center;
+	background-size: cover;
+	float: right;
+	margin: 10px;
+
+}
+.chat .m-message .message{
+	position: relative;
+	width: 120px;
+	background-color: #E1E0F2;
+	border-radius: 5px;
+	padding: 10px;
+	color: #ADACD0;
+	font-family: verdana geneva sans-serif;
+	font-size: 11px;
+	text-align: center;
+	letter-spacing: 1px;
+	float: right;
+	margin-top: 10px;
+}
